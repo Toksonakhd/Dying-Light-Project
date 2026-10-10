@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dying Light Bounties</title>
+
+    <link rel="stylesheet" href="bounties.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+    <header class="site-header">
+
+        <a href="../index.html" class="header-logo-wrap">
+            <img
+                src="images/news-logo.png"
+                alt="Dying Light"
+                class="header-logo"
+            >
+
+            <img
+                src="images/outpost_light_small.avif"
+                alt=""
+                class="header-logo-icon"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="mainNav"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <ul class="nav-list">
+
+                <li class="nav-item nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button">
+                        <span>Games</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="../index.html">Dying Light: The Beast</a></li>
+                        <li><a href="../index.html">Dying Light 2</a></li>
+                        <li><a href="../index.html">Dying Light</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../news/news.html">News</a>
+                </li>
+
+                <li class="nav-item nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button">
+                        <span class="outpost-nav-label">
+                            <img src="images/outpost_light_small.avif" alt="">
+                            Outpost
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="../homedy/home.html">Home</a></li>
+                        <li><a href="../docketsdy/dockets.html">Dockets</a></li>
+                        <li><a href="index.html">Bounties</a></li>
+                        <li><a href="../news/news.html">News</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button">
+                        <span>More</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-buy-item">
+                    <a href="../Buynowdy/buy.html" class="mobile-buy-btn">
+                        Buy Now
+                    </a>
+                </li>
+
+            </ul>
+            
+
+        </nav>
+
+        <div class="header-actions">
+            <a href="../Buynowdy/buy.html" class="buy-now-btn">
+                Buy Now
+            </a>
+
+            <button
+                class="profile-btn"
+                type="button"
+                aria-label="Open profile"
+            >
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="bounties-hero" id="bountiesHero">
+
+            <div class="hero-background"></div>
+            <div class="hero-dark-overlay"></div>
+
+            <div class="hero-inner">
+
+                <div class="hero-title">
+
+                    <img
+                        src="images/header-title-icon.png"
+                        alt=""
+                        class="hero-title-icon"
+                    >
+
+                    <span>Bounties</span>
+
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <img
+                    src="images/bounties-spike-small.png"
+                    alt="Bounties character"
+                    class="hero-character"
+                >
+
+                <div class="hero-bottom">
+
+                    <div class="hero-message">
+
+                        <img
+                            src="images/icon_token.png"
+                            alt=""
+                            class="challenge-icon"
+                        >
+
+                        <div>
+                            <h1>Looking for a challenge?</h1>
+                            <p>You came to the right place</p>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="hero-arrow"
+                        id="heroArrow"
+                        type="button"
+                        aria-label="Show more information"
+                        aria-expanded="false"
+                        aria-controls="bountiesInfo"
+                    >
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                </div>
+
+                <div class="hero-bottom-line"></div>
+
+            </div>
+
+        </section>
+
+        <section class="bounties-info" id="bountiesInfo">
+
+            <div class="info-inner">
+
+                <div class="info-left">
+
+                    <p>
+                        For Pilgrims, navigating the dangerous world on their own is
+                        nothing new. Despite the odds stacked against them, the lone
+                        travelers search for lucrative opportunities by pursuing tasks
+                        others are unwilling to face head-on. Now it is time for you to
+                        set out, tackle various assignments and rise through the ranks.
+                    </p>
+
+                    <h2>Let's get started, then:</h2>
+
+                    <div class="steps">
+
+                        <article class="step-item">
+
+                            <img
+                                src="images/step-bounty-icon.avif"
+                                alt=""
+                            >
+
+                            <h3>Activate Bounties</h3>
+
+                            <p>
+                                Select Bounties Below
+                            </p>
+
+                        </article>
+
+                        <i
+                            class="fa-solid fa-chevron-right step-arrow"
+                            aria-hidden="true"
+                        ></i>
+
+                        <article class="step-item">
+
+                            <img
+                                src="images/step-play-icon.avif"
+                                alt=""
+                            >
+
+                            <h3>Play Dying Light</h3>
+
+                            <p>
+                                Complete Bounties<br>
+                                in the Game(s)
+                            </p>
+
+                        </article>
+
+                        <i
+                            class="fa-solid fa-chevron-right step-arrow"
+                            aria-hidden="true"
+                        ></i>
+
+                        <article class="step-item">
+
+                            <img
+                                src="images/step-outpost-icon.avif"
+                                alt=""
+                            >
+
+                            <h3>Return to Dying Light Outpost</h3>
+
+                            <p>
+                                Claim Reputation Points
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <div class="info-right">
+
+                    <h2>Here's how things work here:</h2>
+
+                    <div class="info-rule">
+
+                        <img
+                            src="images/icon-bounty.avif"
+                            alt=""
+                        >
+
+                        <p>
+                            Come back each week to activate new Bounties
+                        </p>
+
+                    </div>
+
+                    <div class="info-rule">
+
+                        <img
+                            src="images/icon-link.avif"
+                            alt=""
+                        >
+
+                        <p>
+                            Make sure the Dying Light Outpost profile is connected
+                            to your gaming platform
+                        </p>
+
+                    </div>
+
+                    <div class="info-rule">
+
+                        <img
+                            src="images/icon-token.avif"
+                            alt=""
+                        >
+
+                        <p>
+                            Play Dying Light or Dying Light 2: Stay Human to earn
+                            Reputation Points and collect enough to rise through the
+                            Reputation Ranks
+                        </p>
+
+                    </div>
+
+                    <div class="info-rule">
+
+                        <img
+                            src="images/icon-gear.avif"
+                            alt=""
+                        >
+
+                        <p>
+                            Rank up to get Pilgrim Tokens and buy unique items
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="game-switch">
+
+            <button
+                type="button"
+                class="game-switch-btn active"
+                aria-label="Select Dying Light 2"
+            >
+
+                <img
+                    src="images/dl2.png.avif"
+                    alt="Dying Light 2 Stay Human"
+                >
+
+            </button>
+
+            <button
+                type="button"
+                class="game-switch-btn"
+                aria-label="Select Dying Light"
+            >
+
+                <img
+                    src="images/news-logo.png"
+                    alt="Dying Light"
+                >
+
+            </button>
+
+        </div>
+
+        <section class="time-section" id="timeSection">
+
+            <div class="time-top">
+
+                <div class="time-copy">
+
+                    <h2>Time Is Ticking</h2>
+
+                    <p>
+                        Complete weekly Bounties before a new batch<br>
+                        takes its place.
+                    </p>
+
+                </div>
+
+                <div class="countdown">
+
+                    <div class="countdown-item">
+
+                        <span class="countdown-label">
+                            Days
+                        </span>
+
+                        <span
+                            class="countdown-number"
+                            id="countdownDays"
+                        >
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="countdown-item">
+
+                        <span class="countdown-label">
+                            Hours
+                        </span>
+
+                        <span
+                            class="countdown-number"
+                            id="countdownHours"
+                        >
+                            09
+                        </span>
+
+                    </div>
+
+                    <span class="countdown-colon">:</span>
+
+                    <div class="countdown-item">
+
+                        <span class="countdown-label">
+                            Minutes
+                        </span>
+
+                        <span
+                            class="countdown-number"
+                            id="countdownMinutes"
+                        >
+                            47
+                        </span>
+
+                    </div>
+
+                    <span class="countdown-colon">:</span>
+
+                    <div class="countdown-item">
+
+                        <span class="countdown-label">
+                            Seconds
+                        </span>
+
+                        <span
+                            class="countdown-number"
+                            id="countdownSeconds"
+                        >
+                            29
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="community-bounty">
+
+                <div class="community-brand">
+
+                    <img
+                        src="images/community-maps-en.avif"
+                        alt="Community Maps"
+                    >
+
+                    <h3>
+                        Discover New<br>
+                        Bounties
+                    </h3>
+
+                </div>
+
+                <div class="community-text">
+
+                    <h3>Harran. The Slums</h3>
+
+                    <p>
+                        The dated solid masonry, worn down rooftops,
+                        abandoned rail freight transports, they’re all here.
+                        Just like you remember them.
+                    </p>
+
+                    <button
+                        class="show-map-btn"
+                        type="button"
+                    >
+                        Show Map
+                    </button>
+
+                </div>
+
+                <div class="bounty-card">
+
+                    <img
+                        class="bounty-card-image"
+                        src="images/distant_traveler.jpg"
+                        alt="Harran The Slums"
+                    >
+
+                    <div class="bounty-card-content">
+
+                        <span class="reward">
+                            500 RP
+                        </span>
+
+                        <h4>Distant Traveler</h4>
+
+                        <p>
+                            Travel <strong>1000</strong> meters on<br>
+                            Harran. The Slums map.
+                        </p>
+
+                        <button
+                            class="activate-btn"
+                            type="button"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="weekly-bounties-section">
+
+            <div class="weekly-bounties-top">
+
+                <div class="weekly-bounties-heading">
+
+                    <h2>Weekly Bounties</h2>
+
+                    <p>
+                        Complete the full set before the clock strikes
+                        the final hour.
+                    </p>
+
+                </div>
+
+                <div class="active-bounties">
+
+                    <h3>Active Bounties</h3>
+
+                    <div class="active-bounties-counter">
+
+                        <div class="counter-box">
+                            <span id="activeBountiesCount">0</span>
+                        </div>
+
+                        <span class="counter-slash">/</span>
+
+                        <div class="counter-box">
+                            <span>3</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="weekly-featured-row">
+
+                <div class="extra-rewards-card">
+
+                    <img
+                        src="images/extra-bounty-description-bg.jpg"
+                        alt="Extra Rewards"
+                        class="extra-rewards-background"
+                    >
+
+                    <div class="extra-rewards-overlay"></div>
+
+                    <div class="extra-rewards-content">
+
+                        <div class="extra-rewards-title">
+
+                            <img
+                                src="images/icon-bounty2.avif"
+                                alt=""
+                                class="extra-rewards-icon"
+                            >
+
+                            <h3>Extra Rewards</h3>
+
+                        </div>
+
+                        <p>
+                            Receive additional Reputation Points by
+                            taking care of all Bounties.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <article class="weekly-bounty-card featured-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-bounty-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/tgg_bounty_streak.avif"
+                            alt="Current Status"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            1000 RP
+                        </span>
+
+                        <h3>Current Status</h3>
+
+                        <p>
+                            What are you waiting for?<br>
+                            Time to get to it!
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="current-status"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="weekly-bounties-grid">
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-kill-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/headshot-hero.avif"
+                            alt="Corpse Walker"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            200 RP
+                        </span>
+
+                        <h3>Corpse Walker</h3>
+
+                        <p>
+                            Defeat <strong>10</strong> Enemies by
+                            smashing their head into the ground.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="corpse-walker"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-kill-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/last-man-standing.avif"
+                            alt="Last Man Standing"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            200 RP
+                        </span>
+
+                        <h3>Last Man Standing</h3>
+
+                        <p>
+                            Defeat <strong>50</strong> Renegades
+                            in the daytime.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="last-man-standing"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-loot-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/sample-collector.avif"
+                            alt="Scavenger Supreme"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            400 RP
+                        </span>
+
+                        <h3>Scavenger Supreme</h3>
+
+                        <p>
+                            Collect <strong>100</strong> Valuables.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="scavenger-supreme"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-kill-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/demolisher-supreme.avif"
+                            alt="Elusive Hero"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            400 RP
+                        </span>
+
+                        <h3>Elusive Hero</h3>
+
+                        <p>
+                            Defeat <strong>3</strong> Demolishers
+                            with ranged weapons.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="elusive-hero"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-kill-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/stick-up-artist.avif"
+                            alt="Stick-up Artist"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            300 RP
+                        </span>
+
+                        <h3>Stick-up Artist</h3>
+
+                        <p>
+                            Defeat <strong>30</strong> enemies by
+                            throwing knives.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="stick-up-artist"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-loot-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/postapocalyptic-technician.avif"
+                            alt="Postapocalyptic Technician"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            300 RP
+                        </span>
+
+                        <h3>Postapocalyptic Technician</h3>
+
+                        <p>
+                            Dismantle <strong>25</strong> Items.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="postapocalyptic-technician"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-parkour-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/escape_artist.avif"
+                            alt="Escape Artist"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            400 RP
+                        </span>
+
+                        <h3>Escape Artist</h3>
+
+                        <p>
+                            Perform <strong>1</strong> Knife Slide on a
+                            Billboard or a Banner during a level 4 Chase.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="escape-artist"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-loot-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/trophy_collector.jpg"
+                            alt="Trophy Collector"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            300 RP
+                        </span>
+
+                        <h3>Trophy Collector</h3>
+
+                        <p>
+                            Loot <strong>20</strong> Rare Infected
+                            Trophies.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="trophy-collector"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="weekly-bounty-card">
+
+                    <div class="bounty-icon">
+                        <img src="images/bounty-loot-icon.png" alt="">
+                    </div>
+
+                    <div class="weekly-bounty-image">
+
+                        <img
+                            src="images/master_collector.avif"
+                            alt="Master Collector"
+                        >
+
+                    </div>
+
+                    <div class="weekly-bounty-content">
+
+                        <span class="weekly-bounty-reward">
+                            300 RP
+                        </span>
+
+                        <h3>Master Collector</h3>
+
+                        <p>
+                            Loot <strong>10</strong> Unique Infected
+                            Trophies.
+                        </p>
+
+                        <button
+                            class="weekly-activate-btn"
+                            type="button"
+                            data-bounty="master-collector"
+                        >
+                            Activate
+                            <span>›</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+    <section class="outpost-newsletter">
+
+    <div class="outpost-newsletter-overlay"></div>
+
+    <div class="outpost-newsletter-inner">
+
+        <div class="outpost-newsletter-left">
+
+            <img
+                src="images/outpost_light_small.avif"
+                alt="Dying Light Outpost"
+                class="outpost-newsletter-logo"
+            >
+
+            <div class="outpost-newsletter-copy">
+
+                <h2>We're only getting started</h2>
+
+                <p>
+                    Subscribe to our newsletter to be the first to learn about more
+                    cool in-game activities, major announcements and content drops.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="outpost-newsletter-right">
+
+            <form class="outpost-newsletter-form">
+
+                <input
+                    type="email"
+                    class="outpost-newsletter-input"
+                    placeholder="Enter your e-mail"
+                    aria-label="Enter your e-mail"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="outpost-subscribe-btn"
+                >
+                    <span>Subscribe</span>
+                </button>
+
+            </form>
+
+            <p class="outpost-newsletter-privacy">
+
+                <a href="#">Here</a>
+
+                you can find information on how we process your personal data,
+                including your basic rights. The controller of your personal data
+                is Techland S.A. with its registered office in Wrocław.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <footer class="site-footer">
+
+    <div class="footer-top">
+
+        <img
+            src="images/footer6.png"
+            alt="Techland partners"
+        >
+
+        <div
+            class="language-selector"
+            id="languageSelector"
+        >
+
+            <button
+                class="language-btn"
+                id="languageBtn"
+                type="button"
+            >
+
+                <i class="fa-solid fa-globe language-globe"></i>
+
+                <span id="currentLanguage">
+                    English
+                </span>
+
+                <i class="fa-solid fa-chevron-down language-arrow"></i>
+
+            </button>
+
+            <div
+                class="language-menu"
+                id="languageMenu"
+            >
+
+                <button type="button">
+                    Deutsch
+                </button>
+
+                <button type="button">
+                    Español
+                </button>
+
+                <button type="button">
+                    Français
+                </button>
+
+                <button type="button">
+                    Polski
+                </button>
+
+                <button type="button">
+                    简体中文
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-content">
+
+            <div class="footer-text">
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Techland
+                    </a>
+
+                    <a href="#">
+                        Support
+                    </a>
+
+                    <a href="#">
+                        EU Projects
+                    </a>
+
+                    <a href="#">
+                        Contact & Press Center
+                    </a>
+
+                </div>
+
+                <div class="footer-info">
+
+                    <span>
+                        ©2026 Techland S.A. All rights reserved.
+                    </span>
+
+                    <a href="#">
+                        Terms of service
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+        <script src="bounties.js"></script>
+
+</body>
+
+</html>

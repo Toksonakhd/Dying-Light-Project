@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dying Light: The Beast</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png.png" alt="Dying Light Logo">
+    </div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <nav>
+    <ul>
+        <li>
+            <a href="#">
+                Games
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </li>
+
+        <li>
+    <a href="news/news.html">
+        News
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+</li>
+        <li class="outpost-menu">
+            <a href="#" class="outpost-link">
+                <span class="outpost-icon">✺</span>
+                Outpost
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <ul class="outpost-dropdown">
+                <li><a href="homedy/home.html">Home</a></li>
+                <li><a href="bounties/bounties.html">Bounties</a></li>
+                <li><a href="armory.html">Armory</a></li>
+                <li><a href="docketsdy/dockets.html">Dockets</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">
+                More
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+    <div class="header-right">
+        <a href="Buynowdy/buy.html" class="buy-btn">BUY NOW</a>
+        <button class="profile-button" id="openLogin" type="button">
+    <img src="images/logo3.png.png" alt="Profile" class="profile">
+</button>
+    </div>
+<div class="login-modal" id="loginModal">
+
+    <div class="login-box">
+
+        <button class="login-close" id="closeLogin" type="button">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+
+        <img src="images/logo.png.png" alt="Dying Light" class="login-logo">
+
+        <h2>SIGN IN</h2>
+
+        <form class="login-form">
+
+            <input type="email" placeholder="E-mail address" required>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                    required
+                >
+
+                <button
+                    type="button"
+                    class="password-toggle"
+                    id="passwordToggle"
+                >
+                    <i class="fa-regular fa-eye-slash"></i>
+                </button>
+
+            </div>
+
+            <a href="#" class="forgot-password">
+                Forgot Password?
+            </a>
+
+            <button type="submit" class="login-submit">
+                SUBMIT
+            </button>
+
+        </form>
+
+        <p class="create-account">
+            New to Dying Light Outpost?
+            <a href="#">Create an account.</a>
+        </p>
+
+    </div>
+
+</div>
+</header>
+
+<main class="hero">
+    
+
+    <div class="overlay"></div>
+
+    <div class="hero-content" id="heroContent">
+        <img src="images/logo2.png.png" alt="Dying Light: The Beast" class="main-logo">
+
+        <button class="main-btn" id="openTrailer" type="button">
+    WATCH TRAILER
+</button>
+<div class="trailer-modal" id="trailerModal">
+  <div class="trailer-modal-content">
+    <button class="trailer-close" id="closeTrailer" type="button">
+      &times;
+    </button>
+
+    <iframe
+      id="trailerFrame"
+      src=""
+      title="Dying Light: The Beast Trailer"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+    </div>
+    <div class="hero-story" id="heroStory">
+
+    <h2>You are Kyle Crane.</h2>
+
+    <p>
+        After being captured by the Baron and enduring his painful experiments for years,
+        you escape. But the scars remain. Left on the edge of humanity with both human and
+        zombie DNA, you struggle to control your inner beast and the conflict that comes
+        with it. But you'll need to, if you want to get your revenge on the man who did
+        this to you.
+    </p>
+
+</div>
+
+
+
+</main>
+<section class="trailer">
+
+    <video class="trailer-video" autoplay muted loop playsinline>
+        <source src="images/restoretheland_av1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="trailer-content">
+        <h2>RESTORE THE LAND</h2>
+        <h3>STEP BY STEP</h3>
+
+        <p>
+            Clear the city of the infected, restore the land of Castor Woods and watch hope return
+            as survivors reclaim their lives with your help  step by step.
+        </p>
+    </div>
+    
+
+</section>
+<section class="half-section">
+
+    <div class="half-content">
+
+        <h2 class="textured-title">HALF</h2>
+
+        <div class="tag-wrapper">
+            <div class="tag survivor-tag">SURVIVOR</div>
+            <div class="tag beast-tag">BEAST</div>
+        </div>
+
+  <div class="half-text">
+
+    <div class="text survivor-text">
+        <p>
+            Become Kyle Crane, a unique hero with DNA
+            <span class="extra-text"> and a beast.</span>
+        </p>
+
+        <p class="second-line">
+            Switch between two playstyles and experience a fierce inner conflict
+            between man and monster, leading to the ultimate embrace of unstoppable strength.
+        </p>
+    </div>
+
+</div>
+</div>
+
+</section>
+
+
+<section class="primal-section">
+
+    <video class="primal-video" autoplay muted loop playsinline>
+        <source src="images/primal.mp4" type="video/mp4">
+    </video>
+
+    <div class="primal-overlay"></div>
+
+    <div class="primal-content">
+
+        <h2 class="textured-title">
+            PRIMAL
+        </h2>
+
+        <div class="primal-tag">
+            BRUTALITY
+        </div>
+
+        <p>
+            Take the raw savagery of Dying Light's combat to the extreme and push brutality beyond human limits as you crush skulls, rip heads off, and tear enemies in half as you struggle to control your hero's constantly evolving, rage-fueled, beast-like powers.
+        </p>
+
+    </div>
+
+</section>
+<section class="comparison-section">
+
+    <div class="comparison-content">
+        <h2 class="textured-title">OWN DAY</h2>
+
+        <div class="night-banner">
+            FEAR THE NIGHT
+        </div>
+
+        <p>
+            A signature of the Dying Light series – the two vastly different experiences
+            of day and night merge into one unforgettable whole. Scavenge and explore by day,
+            mindful of the constant tension of the moving clock – as when the sun sets,
+            the night unleashes horrors that leave you with only three choices:
+            run, hide, or fight for your life.
+        </p>
+    </div>
+
+    <div class="comparison-slider" id="comparisonSlider">
+
+        <img src="images/photo2.jpeg" class="comparison-img base-img" alt="Before">
+
+        <div class="comparison-overlay" id="comparisonOverlay">
+            <img src="images/photo1.jpeg" class="comparison-img top-img" alt="After">
+        </div>
+
+        <div class="comparison-handle" id="comparisonHandle">
+            <svg viewBox="0 0 48 48" class="handle-svg">
+                <rect x="12" y="12" width="24" height="24" transform="rotate(45 24 24)" />
+                <polyline points="24,18 18,24 24,30" />
+                <polyline points="24,18 30,24 24,30" />
+            </svg>
+        </div>
+
+        </div>
+
+</section>
+
+<section class="roads-section">
+
+    <video class="roads-video" autoplay muted loop playsinline>
+        <source src="images/rooftops_av1.mp4" type="video/mp4">
+    </video>
+
+    <div class="roads-overlay"></div>
+
+    <div class="roads-content">
+
+        <h2 class="textured-title">
+    RUN THE ROOFTOPS,
+</h2>
+
+        <div class="roads-banner">
+            RULE THE ROADS
+        </div>
+
+        <p>
+            Feel the rush of best-in-class first-person parkour as you jump from rooftop to rooftop
+            and climb over any obstacle using a movement system accessible to all, yet rewarding
+            to those who master it. Then take the wheel of an off-road vehicle and plow through
+            hordes of zombies, enjoying the unparalleled freedom of open world traversal.
+        </p>
+
+    </div>
+
+</section>
+<section class="apocalypse-section">
+
+    <img src="images/apoc-sky.png.avif" class="apoc-layer apoc-sky">
+    <img src="images/apoc-castle.png.avif" class="apoc-layer apoc-castle">
+    <img src="images/apoc-lake.png.avif" class="apoc-layer apoc-lake">
+    <img src="images/apoc-front.png.avif" class="apoc-layer apoc-front">
+
+    <div class="apoc-content">
+        <h2 class="textured-title">BEAUTIFUL</h2>
+
+        <div class="apoc-banner">
+            ZOMBIE APOCALYPSE
+        </div>
+
+        <p>
+            Breathtaking next-gen visuals bring the handcrafted zombie apocalypse to life,
+            where every detail tells a story of survival. Get lost in the majesty of the
+            Swiss Alps-inspired valley of Castor Woods with various biomes – the touristic
+            town, the industrial area, the national park, farm fields, the swamps – all full
+            of beauty... and decay.
+        </p>
+    </div>
+
+</section>
+<section class="adventure-section">
+
+    <video class="adventure-video" autoplay muted loop playsinline>
+        <source src="images/adventure.mp4" type="video/mp4">
+    </video>
+
+    <div class="adventure-overlay"></div>
+
+    <div class="adventure-content">
+        <h2 class="textured-title">SHARE</h2>
+
+        <div class="adventure-banner">
+            THE ADVENTURE
+        </div>
+
+        <p>
+            Band together in up to 4-player co-op to take on the dangers of Castor Woods,
+            where every fight, every discovery and every twisting step of the story can be
+            faced as a group. Use shared progression to conquer the entire adventure side
+            by side, as you face relentless enemies, scavenge for resources and save each
+            other from the brink of death.
+        </p>
+    </div>
+
+</section>
+<section class="editions">
+
+    <div class="editions-content">
+
+        <div class="editions-header">
+
+            <h2>GET ONE OF THE DYING LIGHT: THE BEAST EDITIONS</h2>
+
+           <div class="edition-buttons">
+
+    <button id="deluxeBtn" class="active">
+        DELUXE EDITION
+    </button>
+
+    <button id="definitiveBtn">
+        DEFINITIVE EDITION
+    </button>
+
+</div>
+
+</div>
+
+        <div class="edition-gallery">
+
+    <div class="edition-left">
+        <img src="images/bg_dltb_deluxe_1920.avif"
+             id="editionLeft"
+             alt="">
+    </div>
+
+    <div class="edition-center">
+        <img src="images/kyle.avif"
+             id="editionCenter"
+             alt="">
+    </div>
+
+    <div class="edition-right">
+        <img src="images/edition-panel.png.png"
+             id="editionPanel"
+             class="edition-right-panel"
+             alt="">
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<section class="faq-section">
+
+    <div class="faq-container">
+
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+        <div class="faq-list">
+
+    <div class="faq-item">
+
+        <div class="faq-question">
+            Is Dying Light: The Beast coming to PlayStation 4 and Xbox One?
+
+            <span>+</span>
+        </div>
+
+        <div class="faq-answer">
+            <p>
+                Our goal is to make Dying Light: The Beast the best Dying Light game to date.
+                To deliver on this, we've prioritised development for PC, PlayStation 5,
+                PlayStation 5 Pro and Xbox Series X|S at launch on September 18, 2025.
+                We will continue optimising versions for PlayStation 4 and Xbox One after
+                the launch and are committed to releasing them until the end of 2025.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <div class="faq-question">
+            I haven't played Dying Light or Dying Light 2: Stay Human - will I enjoy Dying Light: The Beast?
+
+            <span>+</span>
+        </div>
+
+        <div class="faq-answer">
+            <p>
+                Yes, you will! If you've played any of the previous games, you'll have
+                a deeper understanding of the character - but if you're new to the world
+                of Dying Light, this game will offer you a great way to start your journey!
+            </p>
+        </div>
+
+    </div>
+    <div class="faq-item">
+
+    <div class="faq-question">
+        How do I ensure smooth performance and stability?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            Make sure your graphics drivers are up to date before launching the game:
+            <br><br>
+            Nvidia GeForce Game Ready 581.29 (or newer)
+            <br>
+            Intel Game On Driver 32.0.101.7029 (or newer)
+            <br>
+            AMD Adrenalin 25.9.1 (or newer)
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        Where is the in-game stash?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            The in-game stash will become available to you during the second quest,
+            "Safe Haven".
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        Where are my items from the docket codes?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            They are in your in-game stash, available during the second quest,
+            "Safe Haven". Each code must be activated to receive a random powerful weapon.
+        </p>
+    </div>
+
+</div>
+<div class="faq-item">
+
+    <div class="faq-question">
+        Where can I find my Castor Woods Prepper Bundle items from the Deluxe Edition?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            You can find them in your in-game stash, available during the second quest,
+            "Safe Haven".
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        I have the standard edition. Can I upgrade to the Deluxe Edition?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            Yes! You can purchase the Deluxe Upgrade through your platform's official store.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        How do I access my Deluxe Edition Digital Content?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            Visit Dying Light Outpost, create an Outpost account and connect your platform.
+            Click Download to get your Tourist Map, Wallpapers and Official Soundtrack.
+            You must have played the game at least once while online.
+            Steam users can also find the content directly in the game's installation folder.
+        </p>
+    </div>
+
+</div>
+<div class="faq-item">
+
+    <div class="faq-question">
+        What is the difference between DLTB and DLTB RL?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            DLTB RE is a refreshed version of the game that includes all previously
+            released updates, along with a new experience that offers a completely
+            different way to play.
+
+            <br><br>
+
+            New experiences have been layered upon the original game that change the
+            basis of the game. Restored Land marks the first time players can permanently
+            clear an area of infected, for instance. The infected will no longer respawn,
+            but loot and useful items will also no longer renew.
+
+            <br><br>
+
+            These options are also supported by One Life mode wherein players can up the
+            ante even more. Death becomes definitive with no second chances.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        What is included in the Definitive Edition?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            The Definitive Edition includes everything available in the Deluxe version,
+            plus four new DLC packs:
+            <br><br>
+            Action Hero Bundle<br>
+            Hunter Bundle<br>
+            Fire Lotus Pack<br>
+            Discharge Pack
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        Can I upgrade to the Definitive Edition?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            Yes - simply purchase the appropriate upgrade in the store of the platform
+            you are playing on.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="faq-item">
+
+    <div class="faq-question">
+        Do I need to buy Restored Land separately?
+
+        <span>+</span>
+    </div>
+
+    <div class="faq-answer">
+        <p>
+            No - if you already own Dying Light: The Beast, you receive the Restored Land
+            update for free, based on your edition.
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+<section class="newsletter-section">
+
+    <div class="newsletter-content">
+
+        <h2 class="newsletter-title">
+            WANT MORE ON THE BEAST?
+        </h2>
+
+        <p class="newsletter-description">
+            Subscribe to our newsletter to be the first to know about everything
+            <br>
+            related to the upcoming chapter in the Dying Light series!
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Your e-mail"
+                required
+            >
+
+            <button
+                type="submit"
+                class="newsletter-btn">
+                SIGN UP
+            </button>
+
+        </form>
+
+        <p class="newsletter-privacy">
+            <a href="#">Here</a>
+            you can find information on how we process your personal data,
+            including your basic rights. The controller of
+            <br>
+            your personal data is Techland S.A. with its registered office in Wroclaw.
+        </p>
+
+    </div>
+
+</section>
+<footer class="site-footer">
+    <div class="footer-top">
+        <img src="images/footer6.png" alt="Techland partners">
+
+        <div class="language-selector" id="languageSelector">
+            <button
+                class="language-btn"
+                id="languageBtn"
+                type="button"
+                aria-controls="languageMenu"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-globe language-globe"></i>
+                <span id="currentLanguage">English</span>
+                <i class="fa-solid fa-chevron-down language-arrow"></i>
+            </button>
+
+            <div class="language-menu" id="languageMenu">
+                <button type="button">Deutsch</button>
+                <button type="button">Español</button>
+                <button type="button">Français</button>
+                <button type="button">Polski</button>
+                <button type="button">简体中文</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-content">
+            <div class="footer-text">
+                <div class="footer-links">
+                    <a href="#">TECHLAND</a>
+                    <a href="#">SUPPORT</a>
+                    <a href="#">EU PROJECTS</a>
+                    <a href="#">CONTACT &amp; PRESS CENTER</a>
+                </div>
+
+                <div class="footer-info">
+                    <span>©2026 Techland S.A. All rights reserved.</span>
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="language-footer.js"></script>
+
+</body>
+
+
+</html>

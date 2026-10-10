@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dockets | Dying Light</title>
+
+    <link rel="stylesheet" href="dockets.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="../index.html" class="header-logo">
+        <img src="/images/logo.png.png" alt="Dying Light">
+    </a>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+
+        <ul>
+
+            <li>
+                <a href="#">
+                    GAMES
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    NEWS
+                </a>
+            </li>
+
+            <li class="outpost-menu">
+
+                <a href="#" class="outpost-link">
+    <span class="outpost-label">
+        <span class="outpost-icon">✺</span>
+        <span>OUTPOST</span>
+    </span>
+
+    <i class="fa-solid fa-chevron-down"></i>
+</a>
+
+                <ul class="outpost-dropdown">
+
+                    <li>
+                        <a href="../homedy/home.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../bounties.html">
+                            Bounties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../armory.html">
+                            Armory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dockets.html">
+                            Dockets
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    MORE
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li class="mobile-buy-item">
+                <a href="../Buynowdy/index.html" class="mobile-buy-btn">
+                    BUY NOW
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-right">
+
+        <a href="#" class="buy-btn">
+            BUY NOW
+        </a>
+
+        <button
+            class="profile-button"
+            id="openLogin"
+            type="button"
+            aria-label="Open profile"
+        >
+            <img
+                src="../images/logo3.png.png"
+                alt="Profile"
+                class="profile"
+            >
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="dockets-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="dockets-content">
+
+            <div class="dockets-heading">
+
+                <h1>
+                    REDEEM YOUR
+                    <span>CODE</span>
+                </h1>
+
+                <h2>
+                    AND EXCHANGE IT FOR A UNIQUE ITEM
+                </h2>
+
+            </div>
+
+            <button
+                class="how-to-btn"
+                id="openHowTo"
+                type="button"
+            >
+                HOW TO
+                <i class="fa-regular fa-circle-question"></i>
+            </button>
+
+            <form
+                class="redeem-form"
+                id="redeemForm"
+            >
+
+                <input
+                    type="text"
+                    id="docketCode"
+                    placeholder="Enter your code"
+                    autocomplete="off"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="redeem-btn"
+                >
+                    REDEEM
+                </button>
+
+            </form>
+
+            <p
+                class="redeem-message"
+                id="redeemMessage"
+            ></p>
+
+        </div>
+
+    </section>
+
+    <section class="dockets-faq">
+
+        <div class="faq-container">
+
+            <div class="faq-header">
+
+                <h2>
+                    FAQ
+                </h2>
+
+                <p>
+                    Looking for answers? You're in the right place.
+                </p>
+
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            What are Dockets?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Dockets are codes you can redeem for in-game items
+                            available in the Dying Light series.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            How do these codes look like?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Docket codes are great at disguising… Sometimes they
+                            appear in the form of 4x3 hexadecimal codes like
+                            abcd-1234-ef56. But sometimes they also take the form
+                            of any combination of numbers and characters that you
+                            can find on trailers, screenshots and other promotional
+                            assets. You really need to take a close look!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            How can I get them?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can find them hidden across our channels — in
+                            social media posts, videos, and graphics we publish
+                            regularly.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            How do I redeem a Docket?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            To redeem a code, go to dockets.dyinglightgame.com,
+                            create an account, link the platform you use to play
+                            Dying Light, and enter the code using the form at the
+                            top of the page.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            I have a Pilgrim Outpost account. Can I use it here?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes, your Pilgrim Outpost account works on the Dockets
+                            website.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            When will I receive my items for Dying Light: The Beast?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Your items will appear in your in-game stash after
+                            you've successfully redeemed the code on
+                            dockets.dyinglightgame.com and launched Dying Light:
+                            The Beast while connected to the internet.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            Can I collect dockets before the game launches?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Absolutely! Keep your eyes open for our hidden little
+                            treasures and when you launch Dying Light: The Beast
+                            for the first time, your rewards will be waiting for
+                            you. But better be quick - some of the codes might
+                            only work before the game launches…
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+                        <span>
+                            How do I link my platform to my account?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Linking your platform is simple — just go to your
+                            account settings, choose the platform you use to play
+                            Dying Light, and log in. This allows us to send any
+                            rewards you claim directly into your game.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <img
+    src="images/footer.png"
+    alt="Techland"
+    class="techland-logo"
+>
+
+        <button
+            class="language-btn"
+            type="button"
+        >
+            <i class="fa-solid fa-globe"></i>
+
+            <span>
+                ENGLISH
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-links">
+
+            <a href="#">
+                TECHLAND
+            </a>
+
+            <a href="#">
+                SUPPORT
+            </a>
+
+            <a href="#">
+                EU PROJECTS
+            </a>
+
+            <a href="#">
+                CONTACT & PRESS CENTER
+            </a>
+
+        </div>
+
+        <div class="footer-info">
+
+            <span>
+                ©2026 Techland S.A. All rights reserved.
+            </span>
+
+            <a href="#">
+                Terms of Service
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div
+    class="how-to-modal"
+    id="howToModal"
+>
+
+    <div
+        class="how-to-backdrop"
+        id="howToBackdrop"
+    ></div>
+
+    <div class="how-to-box">
+
+        <button
+            class="how-to-close"
+            id="closeHowTo"
+            type="button"
+            aria-label="Close how to modal"
+        >
+            &times;
+        </button>
+
+        <h2>
+            HOW TO REDEEM A DOCKET
+        </h2>
+
+        <p>
+            Sign into your account, enter the docket code and press Redeem.
+            Make sure your gaming platform is connected to your account.
+        </p>
+
+    </div>
+
+</div>
+
+<div
+    class="login-modal"
+    id="loginModal"
+>
+
+    <div class="login-box">
+
+        <button
+            class="login-close"
+            id="closeLogin"
+            type="button"
+            aria-label="Close sign in menu"
+        >
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+
+        <img
+            src="../images/logo.png.png"
+            alt="Dying Light"
+            class="login-logo"
+        >
+
+        <h2>
+            SIGN IN
+        </h2>
+
+        <form
+            class="login-form"
+            id="loginForm"
+        >
+
+            <input
+                type="email"
+                placeholder="E-mail address"
+                autocomplete="email"
+                required
+            >
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button
+                    type="button"
+                    class="password-toggle"
+                    id="passwordToggle"
+                    aria-label="Show password"
+                >
+                    <i class="fa-regular fa-eye-slash"></i>
+                </button>
+
+            </div>
+
+            <a
+                href="#"
+                class="forgot-password"
+            >
+                Forgot Password?
+            </a>
+
+            <button
+                type="submit"
+                class="login-submit"
+            >
+                SUBMIT
+            </button>
+
+        </form>
+
+        <p class="create-account">
+            New to Dying Light Outpost?
+            <a href="#">
+                Create an account.
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="dockets.js"></script>
+
+</body>
+
+</html>

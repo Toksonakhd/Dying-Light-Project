@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dying Light News</title>
+
+    <link rel="stylesheet" href="news.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="../index.html" class="header-logo">
+        <img src="images/news-logo.png" alt="Dying Light">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+
+        <ul class="nav-list">
+
+            <li class="nav-item">
+                <a href="../index.html">
+                    <span>Games</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="news.html">
+                    <span>News</span>
+                </a>
+            </li>
+            <li class="nav-item outpost-menu" id="outpostMenu">
+
+                <button
+                    class="outpost-link"
+                    id="outpostButton"
+                    type="button"
+                    aria-expanded="false"
+                >
+                    <span class="outpost-icon">✺</span>
+                    <span>Outpost</span>
+                    <i class="fa-solid fa-chevron-down outpost-arrow"></i>
+                </button>
+
+                <ul class="outpost-dropdown">
+
+                    <li>
+                        <a href="../homedy/home.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../bounties/bounties.html">
+                            Bounties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Armory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../docketsdy/dockets.html">
+                            Dockets
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item">
+                <a href="#">
+                    <span>More</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li class="mobile-buy-item">
+                <a href="../Buynowdy/buy.html" class="mobile-buy-btn">
+                    Buy Now
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-right">
+        <a href="../Buynowdy/index.html" class="buy-btn">
+            Buy Now
+        </a>
+    </div>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mainNav"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<main class="news-page">
+
+    <section class="featured-news">
+
+        <div class="featured-inner">
+
+            <div class="featured-info">
+
+                <span class="featured-date">
+                    06/10/2026
+                </span>
+
+                <h1>
+                    Update 1.28
+                </h1>
+
+                <p>
+                    The reality snapped, and the old friends reappeared again -
+                    this time introducing Villedor to dimensions of fun and challenge!
+                    Let's see what the Breach is about, and what else we have prepared
+                    for you in this Update.
+                </p>
+
+                <a href="#" class="orange-label">
+                    Patch Notes
+                </a>
+
+            </div>
+
+            <a href="#" class="featured-image">
+                <img
+                    src="images/news-hero.png"
+                    alt="Dying Light Update Version 1.28"
+                >
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="news-content">
+
+        <div class="news-container">
+
+            <div class="news-filters">
+
+                <div class="filter-group game-filters">
+
+                    <button class="filter-btn active" type="button">
+                        All
+                    </button>
+
+                    <button class="filter-btn" type="button">
+                        Dying Light
+                    </button>
+
+                    <button class="filter-btn" type="button">
+                        Dying Light 2
+                    </button>
+
+                    <button class="filter-btn" type="button">
+                        Dying Light: The Beast
+                    </button>
+
+                </div>
+
+                <span class="filter-divider"></span>
+
+                <div class="filter-group category-filters">
+
+                    <button class="filter-btn active" type="button">
+                        All
+                    </button>
+
+                    <button class="filter-btn" type="button">
+                        Update
+                    </button>
+
+                    <button class="filter-btn" type="button">
+                        Promotion
+                    </button>
+
+                    <button
+                        class="filter-more"
+                        type="button"
+                        aria-label="More filters"
+                    >
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+
+                </div>
+
+                <button
+                    class="search-button"
+                    type="button"
+                    aria-label="Search"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-1.avif"
+                            alt="Looking for your next summer destination"
+                        >
+
+                        <span class="card-label">
+                            Promotion
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            07/02/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                Looking for your next summer destination?
+                            </a>
+                        </h2>
+
+                        <p>
+                            Why settle for an ordinary holiday when you can climb
+                            rooftops instead of mountains and explore abandoned
+                            cities instead of crowded resorts?
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-2.png"
+                            alt="Hotfix 1.28.1"
+                        >
+
+                        <span class="card-label">
+                            Patch Notes
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            06/25/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                Hotfix 1.28.1
+                            </a>
+                        </h2>
+
+                        <p>
+                            Hotfix 1.28.1 fixes a number of bugs in UGC mods,
+                            as well as addressing some crashes and improving
+                            QOL features.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-3.png"
+                            alt="The Breach Has Opened"
+                        >
+
+                        <span class="card-label">
+                            Update
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            06/10/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                The Breach Has Opened
+                            </a>
+                        </h2>
+
+                        <p>
+                            Learn more about The Breach from our latest Devblog
+                            by Rafał Polito, UGC Program Manager.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-4.jpg"
+                            alt="Dying Light Hotfix"
+                        >
+
+                        <span class="card-label">
+                            Patch Notes
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            05/28/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                The Latest Hotfix Is Live
+                            </a>
+                        </h2>
+
+                        <p>
+                            Check out the latest fixes, stability improvements
+                            and gameplay changes introduced to Dying Light.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-5.png"
+                            alt="Hotfix Version 1.3"
+                        >
+
+                        <span class="card-label">
+                            Update
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            05/14/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                Hotfix Version 1.3
+                            </a>
+                        </h2>
+
+                        <p>
+                            A new hotfix brings gameplay improvements,
+                            important fixes and additional optimizations.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-6.png"
+                            alt="Hotfix Version 1.2"
+                        >
+
+                        <span class="card-label">
+                            Patch Notes
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            04/30/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                Hotfix Version 1.2
+                            </a>
+                        </h2>
+
+                        <p>
+                            Discover the newest set of fixes and changes
+                            prepared for the Dying Light community.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-7.png"
+                            alt="Hotfix Version 1.1"
+                        >
+
+                        <span class="card-label">
+                            Patch Notes
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            04/17/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                Hotfix Version 1.1
+                            </a>
+                        </h2>
+
+                        <p>
+                            This update addresses reported issues and introduces
+                            several stability and performance improvements.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-8.png"
+                            alt="Dying Light News"
+                        >
+
+                        <span class="card-label">
+                            Promotion
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            04/03/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                A New Challenge Awaits
+                            </a>
+                        </h2>
+
+                        <p>
+                            Prepare yourself for another adventure filled
+                            with danger, action and unforgettable moments.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <a href="#" class="news-card-image">
+                        <img
+                            src="images/news-card-9.png"
+                            alt="Dying Light Update"
+                        >
+
+                        <span class="card-label">
+                            Update
+                        </span>
+                    </a>
+
+                    <div class="news-card-content">
+
+                        <span class="news-date">
+                            03/20/2026
+                        </span>
+
+                        <h2>
+                            <a href="#">
+                                New Update Available
+                            </a>
+                        </h2>
+
+                        <p>
+                            Read the complete update notes and discover
+                            everything that has changed in the game.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<nav class="pagination" aria-label="News pages">
+
+    <a href="#" class="page-number active">
+        1
+    </a>
+
+    <a href="#" class="page-number">
+        2
+    </a>
+
+    <a href="#" class="page-number">
+        3
+    </a>
+
+    <a href="#" class="page-number">
+        4
+    </a>
+
+    <a href="#" class="page-number">
+        5
+    </a>
+
+    <span class="page-dots">
+        ...
+    </span>
+
+    <a href="#" class="page-number">
+        33
+    </a>
+
+</nav>
+
+<section class="newsletter-section">
+
+    <div class="newsletter-overlay"></div>
+
+    <div class="newsletter-content">
+
+        <h2>
+            Want to be the first to know?
+        </h2>
+
+        <p class="newsletter-description">
+            Subscribe to our newsletter to find out about all the latest
+            goings-on, including events, announcements and drops!
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                class="newsletter-input"
+                type="email"
+                placeholder="Your e-mail"
+                aria-label="Your e-mail"
+                required
+            >
+
+            <button class="newsletter-btn" type="submit">
+                Sign Up
+            </button>
+
+        </form>
+
+        <p class="newsletter-privacy">
+
+            <a href="#">
+                Here
+            </a>
+
+            you can find information on how we process your personal data,
+            including your basic rights. The controller of your personal data
+            is Techland S.A. with its registered office in Wrocław.
+
+        </p>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+
+    <div class="footer-top">
+
+        <img
+            src="images/footer6.png"
+            alt="Techland partners"
+        >
+
+        <div
+            class="language-selector"
+            id="languageSelector"
+        >
+
+            <button
+                class="language-btn"
+                id="languageBtn"
+                type="button"
+                aria-controls="languageMenu"
+                aria-expanded="false"
+            >
+
+                <i class="fa-solid fa-globe language-globe"></i>
+
+                <span id="currentLanguage">
+                    English
+                </span>
+
+                <i class="fa-solid fa-chevron-down language-arrow"></i>
+
+            </button>
+
+            <div
+                class="language-menu"
+                id="languageMenu"
+            >
+
+                <button type="button">
+                    Deutsch
+                </button>
+
+                <button type="button">
+                    Español
+                </button>
+
+                <button type="button">
+                    Français
+                </button>
+
+                <button type="button">
+                    Polski
+                </button>
+
+                <button type="button">
+                    简体中文
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-content">
+
+            <div class="footer-text">
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Techland
+                    </a>
+
+                    <a href="#">
+                        Support
+                    </a>
+
+                    <a href="#">
+                        EU Projects
+                    </a>
+
+                    <a href="#">
+                        Contact & Press Center
+                    </a>
+
+                </div>
+
+                <div class="footer-info">
+
+                    <span>
+                        ©2026 Techland S.A. All rights reserved.
+                    </span>
+
+                    <a href="#">
+                        Terms of service
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="news.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dying Light - Buy Now</title>
+
+    <link rel="stylesheet" href="buy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="../index.html">
+            <img src="images/logo.png.png" alt="Dying Light">
+        </a>
+    </div>
+
+    <nav id="mainNav">
+
+        <ul>
+
+            <li>
+                <a href="../index.html">
+                    Games
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="../news/news.html">
+                    News
+                </a>
+            </li>
+
+            <li class="outpost-menu">
+
+                <button
+                    class="outpost-link"
+                    id="outpostToggle"
+                    type="button"
+                    aria-expanded="false"
+                >
+                    <span class="outpost-icon">
+                        <i class="fa-solid fa-circle-radiation"></i>
+                    </span>
+
+                    <span>Outpost</span>
+
+                    <i class="fa-solid fa-chevron-down outpost-arrow"></i>
+                </button>
+
+                <ul class="outpost-dropdown">
+
+                    <li>
+                        <a href="../outpost/index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../bounties/bounties.html">
+                            Bounties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Armory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../docketsdy/dockets.html">
+                            Dockets
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    More
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+
+            <li class="mobile-buy-item">
+                <a href="index.html" class="mobile-buy-btn">
+                    Buy Now
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header-right">
+
+        <a href="index.html" class="buy-btn">
+            Buy Now
+        </a>
+
+    </div>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mainNav"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<main class="buy-page">
+
+    <section class="buy-hero">
+
+        <div class="game-selector">
+
+            <button
+                class="game-logo-btn"
+                type="button"
+                data-game="dying-light"
+            >
+                <img
+                    src="images/logo.png.png"
+                    alt="Dying Light"
+                >
+            </button>
+
+            <button
+                class="game-logo-btn active"
+                type="button"
+                data-game="beast"
+            >
+                <img
+                    src="images/logo2.png.png"
+                    alt="Dying Light The Beast"
+                >
+            </button>
+
+            <button
+                class="game-logo-btn"
+                type="button"
+                data-game="dying-light-2"
+            >
+                <img
+                    src="images/dl2.png.avif"
+                    alt="Dying Light 2 Stay Human"
+                >
+            </button>
+
+        </div>
+
+        <div class="edition-heading">
+
+            <h1>
+                Editions
+            </h1>
+
+            <button class="compare-btn" type="button">
+                Compare
+            </button>
+
+        </div>
+
+        <div class="edition-cards">
+
+            <button class="edition-card standard-card" type="button">
+
+                <div class="edition-image">
+                    <img
+                        src="images/edition_bg_dltbs.jpg"
+                        alt="Standard Edition"
+                    >
+                </div>
+
+                <span class="edition-name">
+                    Standard
+                </span>
+
+            </button>
+
+            <button class="edition-card deluxe-card active" type="button">
+
+                <div class="edition-image">
+                    <img
+                        src="images/deluxe-edition.jpg"
+                        alt="Deluxe Edition"
+                    >
+                </div>
+
+                <span class="edition-name">
+                    Deluxe
+                </span>
+
+            </button>
+
+            <button class="edition-card definitive-card" type="button">
+
+                <div class="edition-image">
+                    <img
+                        src="images/definitive-edition.jpg"
+                        alt="Definitive Edition"
+                    >
+                </div>
+
+                <span class="edition-name">
+                    Definitive
+                </span>
+
+            </button>
+
+        </div>
+
+        <div class="purchase-area">
+
+            <a href="#" class="main-buy-btn">
+                Buy Now
+            </a>
+
+            <button class="region-btn" type="button">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span>
+                    Region:
+                    <strong>United States</strong>
+                </span>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-top">
+
+        <img
+            src="images/footer4.png"
+            alt="Techland partners"
+        >
+
+        <div
+            class="language-selector"
+            id="languageSelector"
+        >
+
+            <button
+                class="language-btn"
+                id="languageBtn"
+                type="button"
+            >
+
+                <i class="fa-solid fa-globe language-globe"></i>
+
+                <span id="currentLanguage">
+                    ENGLISH
+                </span>
+
+                <i class="fa-solid fa-chevron-down language-arrow"></i>
+
+            </button>
+
+            <div
+                class="language-menu"
+                id="languageMenu"
+            >
+
+                <button type="button">
+                    DEUTSCH
+                </button>
+
+                <button type="button">
+                    ESPAÑOL
+                </button>
+
+                <button type="button">
+                    FRANÇAIS
+                </button>
+
+                <button type="button">
+                    POLSKI
+                </button>
+
+                <button type="button">
+                    简体中文
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-content">
+
+            <div class="footer-text">
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        Techland
+                    </a>
+
+                    <a href="#">
+                        Support
+                    </a>
+
+                    <a href="#">
+                        EU Projects
+                    </a>
+
+                    <a href="#">
+                        Contact & Press Center
+                    </a>
+
+                </div>
+
+                <div class="footer-info">
+
+                    <span>
+                        ©2026 Techland S.A. All rights reserved.
+                    </span>
+
+                    <a href="#">
+                        Terms of service
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="buy.js"></script>
+
+</body>
+
+</html>

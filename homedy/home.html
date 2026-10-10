@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dying Light Outpost</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a href="index.html" class="header-logo">
+
+        <img
+            src="images/logo.png"
+            alt="Dying Light"
+            class="dying-light-logo"
+        >
+
+        <img
+            src="images/icon_token.png"
+            alt="Outpost"
+            class="header-token"
+        >
+
+    </a>
+
+    <nav class="main-nav">
+
+        <a href="#">
+            Games
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a href="#">
+            News
+        </a>
+
+        <a href="home.html" class="active">
+            Outpost
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a href="#">
+            More
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+    </nav>
+
+    <a href="#" class="header-buy-btn">
+        Buy Now
+    </a>
+
+    <button
+        class="burger-btn"
+        id="burgerBtn"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-hidden="true"
+>
+
+    <nav class="mobile-nav">
+
+        <a href="#">
+            <span>Games</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="#">
+            <span>News</span>
+        </a>
+
+        <a href="home.html" class="active">
+
+            <span class="mobile-outpost-label">
+
+                <img
+                    src="images/icon_token.png"
+                    alt=""
+                >
+
+                Outpost
+
+            </span>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <a href="#">
+            <span>More</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </a>
+
+        <a href="#" class="mobile-buy-btn">
+            Buy Now
+        </a>
+
+    </nav>
+
+</div>
+
+<main class="outpost-page">
+
+    <section class="outpost-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-heading">
+
+                <h1>
+                    Welcome to Outpost,
+                    <span>
+                        an all-in-one hub for Dying Light fans.
+                    </span>
+                </h1>
+
+            </div>
+
+            <button
+                class="intro-card"
+                id="openIntro"
+                type="button"
+            >
+
+                <img
+                    src="images/home_trailer.jpg"
+                    alt="Watch Intro"
+                    class="intro-image"
+                >
+
+                <span class="intro-bottom">
+
+                    <span class="intro-text">
+                        Watch Intro
+                    </span>
+
+                    <span class="intro-play">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="account-panel">
+
+        <div class="account-panel-overlay"></div>
+
+        <div class="account-content">
+
+            <h2>Create an Account</h2>
+
+            <form class="account-form">
+
+                <div class="input-field">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="E-mail address"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-field password-field">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <span class="caps-label">
+                        CAPS
+                    </span>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="password"
+                        aria-label="Show password"
+                    >
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <div class="input-field password-field">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="confirmPassword"
+                        aria-label="Show password"
+                    >
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="game-code-btn"
+                >
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    <span>
+                        Game Code
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+                <label class="custom-checkbox">
+
+                    <input
+                        type="checkbox"
+                        name="newsletter"
+                    >
+
+                    <span class="checkbox-box"></span>
+
+                    <span class="checkbox-text">
+                        I would like to receive newsletter, including the latest
+                        news on Dying Light and the special offers, from Techland.
+                        Remember that you can always unsubscribe.
+                    </span>
+
+                </label>
+
+                <label class="custom-checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <span class="checkbox-box"></span>
+
+                    <span class="checkbox-text">
+                        I accept the Terms of Service available here.
+                    </span>
+
+                </label>
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit
+                </button>
+
+            </form>
+
+            <p class="signin-text">
+                Already have an account?
+                <a href="#">
+                    Sign in here.
+                </a>
+            </p>
+
+            <p class="account-note">
+                <span class="here-link">Here</span>
+                you can find information on how we process your personal
+                data, including your basic rights. The controller of your
+                personal data is Techland S.A. with its registered office in
+                Wrocław.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-top">
+
+        <img
+            src="images/footer.png"
+            alt="Techland"
+            class="footer-logo"
+        >
+
+        <div class="language-selector">
+
+            <div class="language-menu">
+
+                <button type="button" data-language="DEUTSCH">
+                    DEUTSCH
+                </button>
+
+                <button type="button" data-language="ESPAÑOL">
+                    ESPAÑOL
+                </button>
+
+                <button type="button" data-language="FRANÇAIS">
+                    FRANÇAIS
+                </button>
+
+                <button type="button" data-language="POLSKI">
+                    POLSKI
+                </button>
+
+                <button type="button" data-language="简体中文">
+                    简体中文
+                </button>
+
+            </div>
+
+            <button
+                class="language-btn"
+                type="button"
+                aria-expanded="false"
+            >
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span>
+                    ENGLISH
+                </span>
+
+                <i class="fa-solid fa-chevron-up language-arrow"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-content">
+
+            <div class="footer-text">
+
+                <div class="footer-links">
+
+                    <a href="#">
+                        TECHLAND
+                    </a>
+
+                    <a href="#">
+                        SUPPORT
+                    </a>
+
+                    <a href="#">
+                        EU PROJECTS
+                    </a>
+
+                    <a href="#">
+                        CONTACT &amp; PRESS CENTER
+                    </a>
+
+                </div>
+
+                <div class="footer-info">
+
+                    <span>
+                        ©2026 Techland S.A. All rights reserved.
+                    </span>
+
+                    <a href="#">
+                        Terms of service
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div
+    class="video-modal"
+    id="videoModal"
+    aria-hidden="true"
+>
+
+    <div
+        class="video-modal-backdrop"
+        id="videoBackdrop"
+    ></div>
+
+    <div class="video-modal-content">
+
+        <button
+            class="video-close"
+            id="closeIntro"
+            type="button"
+            aria-label="Close video"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="video-wrapper">
+
+            <iframe
+                id="introVideo"
+                src=""
+                title="Dying Light Outpost Intro"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="home.js"></script>
+
+</body>
+
+</html>
